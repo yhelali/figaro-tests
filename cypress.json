@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://lefigaro.fr",
+  "video": true,
+  "pageLoadTimeout": 45000,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "mochaFile": "cypress/results/output.xml"
+  },
+  "testFiles": "**/*.feature"
+}

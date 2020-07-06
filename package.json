@@ -1,0 +1,24 @@
+{
+  "name": "lefigaro-tests",
+  "version": "1.0.0",
+  "description": "Cypress tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "figaro-tests": "cypress run"
+  },
+  "keywords": [],
+  "author": "Helali Yassin <yhelali@lefigaro.com>",
+  "devDependencies": {
+    "cypress": "4.9.0",
+    "cypress-cucumber-preprocessor": "2.5.2",
+    "mochawesome": "6.1.1",
+    "wdio-mochawesome-reporter": "2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "commonPath": "cypress/integration",
+    "step_definitions": "cypress/integration"
+  },
+  "dependencies": {}
+}

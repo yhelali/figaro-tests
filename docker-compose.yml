@@ -1,0 +1,12 @@
+version: '3'
+services:
+  cypress:
+    image: cypress
+    build: .
+    container_name: cypress
+    environment:
+      - CYPRESS_baseUrl=http://lefigaro.fr
+    command: npx cypress run --headed --spec **/*.feature
+    volumes:
+      - ./cypress:/app/cypress
+      - ./cypress.json:/app/cypress.json
