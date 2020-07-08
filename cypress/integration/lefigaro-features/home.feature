@@ -1,4 +1,4 @@
-Feature: The Facebook
+Feature: Le Figaro Connect
 
   Background:
     Given I am on a desktop device
